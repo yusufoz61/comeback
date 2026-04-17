@@ -1,0 +1,33 @@
+.html-page {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+            'sidebar header'
+            'sidebar content'
+            'siebar footer';
+    justify-items: center;
+    align-items: center;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+
+}
+
+ ul {
+    list-style-type: none;
+}
+
+.header {
+    grid-area: header;
+}
+
+#main-content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}

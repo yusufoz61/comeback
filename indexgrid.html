@@ -49,9 +49,38 @@
 
             <section aria-labelledby="table-heading">
                 <h2 id="table-heading" class="sr-only">Recent transactions</h2>
-                <table class="table">
-                    <!-- your existing table markup -->
-                </table>
+                    <table class="table">
+                        <caption class="sr-only">Recent transactions, sorted by date</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Merchant</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><time datetime="2026-04-09">9 apr 2026</time></td>
+                            <td>Max</td>
+                            <td><span aria-label="minus 550 euro">-€550</span></td>
+                            <td><span role="status">Settled</span></td>
+                        </tr>
+                        <tr>
+                            <td><time datetime="2026-04-09">9 apr 2026</time></td>
+                            <td>Luka</td>
+                            <td><span aria-label="minus 340 euro">-€340</span></td>
+                            <td><span role="status">Incomplete</span></td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th scope="row" colspan="2">Total</th>
+                            <td><span aria-label="minus 890 euro">-€890</span></td>
+                            <td></td>
+                        </tr>
+                        </tfoot>
+                    </table>
             </section>
         </main>
     </div>
