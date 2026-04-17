@@ -1,11 +1,12 @@
 .html-page {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 200px 3fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas:
             'sidebar header'
             'sidebar content'
-            'siebar footer';
+            'sidebar footer';
     justify-items: center;
     align-items: center;
 
@@ -13,7 +14,13 @@
 
 .sidebar {
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
 
+    align-self: normal;
+    justify-content: space-evenly;
+
+    margin-bottom: 16rem;
 }
 
  ul {
