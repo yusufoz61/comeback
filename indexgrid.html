@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>grid layout</title>
+    <link rel="stylesheet" href="stylegrid.css"/>
+</head>
+<body>
+<a href="#main-content" class="sr-only">Skip to main content</a>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <span class="logo">FinTrack</span>
+        <nav aria-label="Sidebar navigation">
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Cards</a></li>
+                <li><a href="#">Send money</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="content">
+        <header class="topbar">
+            <h1>Overview</h1>
+            <span class="profile">Sander</span>
+        </header>
+
+        <main id="main-content">
+            <section aria-labelledby="stats-heading">
+                <h2 id="stats-heading" class="sr-only">Account summary</h2>
+                <div class="stats">
+                    <div class="stat-cards">
+                        <p class="stat-label">Balance</p>
+                        <p class="stat-value">€4,430.23</p>
+                    </div>
+                    <div class="stat-cards">
+                        <p class="stat-label">Liabilities</p>
+                        <p class="stat-value">€2,183.22</p>
+                    </div>
+                    <div class="stat-cards">
+                        <p class="stat-label">Total</p>
+                        <p class="stat-value">€2,253.01</p>
+                    </div>
+                </div>
+            </section>
+
+            <section aria-labelledby="table-heading">
+                <h2 id="table-heading" class="sr-only">Recent transactions</h2>
+                <table class="table">
+                    <!-- your existing table markup -->
+                </table>
+            </section>
+        </main>
+    </div>
+
+</div>
+</body>
+</html>

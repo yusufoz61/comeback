@@ -1,0 +1,79 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 60px;
+    border-bottom: 0.5px solid #e0e0e0;
+}
+
+.nav-links {
+    display:flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-content {
+    margin-top: 2rem;
+    padding: 0 24px;
+}
+
+section {
+    margin: 2rem;
+}
+
+.stats {
+    display: flex;
+    gap: 16px;
+}
+
+.stat-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.stat-cards {
+    flex: 1;
+    padding: 6px 12px;
+    border: 1px grey solid;
+    border-radius: 12px;
+}
+
+.table {
+    border-radius: 12px;
+    border: 1px solid darkgray;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    text-align: left;
+    padding: 4px 6px;
+}

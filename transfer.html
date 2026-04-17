@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Transfer forms</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    <main id="main-content">
+        <form aria-labelledby="transfer-heading" novalidate>
+            <h2 id="transfer-heading">Sending money</h2>
+
+            <fieldset>
+                <legend>Recipient</legend>
+
+                <label for="recipient-name">Full name</label>
+                <input
+                    type="text"
+                    id="recipient-name"
+                    name="recipient-name"
+                    autocomplete="off"
+                    aria-describedby="name-error"
+                    required
+                >
+                <p id="name-error" role="alert" hidden>Enter your full name</p>
+
+
+                <label for="recipient-iban">IBAN</label>
+                <input
+                    type="text"
+                    inputmode="text"
+                    id="recipient-iban"
+                    name="recipient-iban"
+                    autocomplete="off"
+                    aria-describedby="iban-hint iban-error"
+                    required
+                >
+                <p id="iban-hint">e.g. IBAN 23 3456 3452</p>
+                <p id="iban-error" role="alert" hidden>Please fill in your IBAN</p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Transfer details</legend>
+
+                <label for="recipient-amount">Transfer amount</label>
+                <input
+                    type="number"
+                    inputmode="decimal"
+                    id="recipient-amount"
+                    name="recipient-amount"
+                    autocomplete="off"
+                    aria-describedby="amount-hint amount-error"
+                    min="0.01"
+                    max="10000"
+                    step="0.01"
+                    required
+                >
+                <p id="amount-hint">Fill in the amount you wish to transfer</p>
+                <p id="amount-error" role="alert" hidden> Enter an amount between 0.01 and 10.000</p>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
